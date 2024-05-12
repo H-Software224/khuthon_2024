@@ -4,56 +4,6 @@
 from openai import OpenAI
 import os
 import pandas as pd
-# gpt_5_client = OpenAI(api_key='open')
-
-
-# 텍스트 데이터 다운로드 한 다음에 유의
-# completion = gpt_5_client.chat.completions.create(
-#   model="gpt-3.5-turbo",
-#   messages=[
-#     {"role": "system", "content": "무엇을 도와드릴까요?"},
-#     {"role": "user", "content": "khuthon을 잘하려면 어떻게 해야 돼?"}
-#   ]
-# )
-
-# print(completion.choices[0].message)
-
-# embedding_client = OpenAI(api_key='your_openai_key')
-
-# response = embedding_client.embeddings.create(
-#     input="Your text string goes here",
-#     model="text-embedding-3-small"
-# )
-
-# print(response.data[0].embedding)
-
-# class encoding:
-#   #S, A+, A 등의 level에 대응하는 one-hot vector return
-#   #직접적으로 사용 X
-#   def match(level):
-#     level_matching = {'S':[1,0,0,0,0,0,0], 'A+':[0,1,0,0,0,0,0], 'A':[0,0,1,0,0,0,0],
-#                       'B+':[0,0,0,1,0,0,0], 'B':[0,0,0,0,1,0,0], 'C':[0,0,0,0,0,1,0], 'D' : [0,0,0,0,0,0,1]}
-
-#     return level_matching[level]
-
-#   #ex: (S, A+, D, C) -> 각 level을 one-hot vector로 표현하여, 행렬 return
-#   #직접적으로 사용 O
-#   def encode(level):
-#     encoding = [match[level[i]] for i in range(len(level))]
-#     return encoding
-# print(len(" 이 글에 대해서 키워드 추출해줘."))
-# class embedding:
-#   def __init__(self):
-#     pass
-
-#   def embed(self, client, word):
-#     response = client.embeddings.create(input = "%s" %word,  model="text-embedding-3-small")
-
-#     #embedding_vector 추출
-#     embedding_vector = response.data[0].embedding
-
-#     return embedding_vector
-  
 NUMBER = 5 #분야 별 키워드 개수
 
 # text 파일 열기
