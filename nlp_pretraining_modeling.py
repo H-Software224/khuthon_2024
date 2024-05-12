@@ -18,7 +18,7 @@ import pandas as pd
 
 # print(completion.choices[0].message)
 
-# embedding_client = OpenAI(api_key='sk-proj-ePxLzPaF5osbpf5c9Su8T3BlbkFJWLQJT1tos1kynUvWy3dJ')
+# embedding_client = OpenAI(api_key='your_openai_key')
 
 # response = embedding_client.embeddings.create(
 #     input="Your text string goes here",
@@ -66,7 +66,7 @@ NUMBER = 5 #분야 별 키워드 개수
 
 # from openai import OpenAI
 
-# gpt_5_client = OpenAI(api_key='sk-proj-ePxLzPaF5osbpf5c9Su8T3BlbkFJWLQJT1tos1kynUvWy3dJ')
+# gpt_5_client = OpenAI(api_key='your_openai_key')
 
 
 # # 텍스트 데이터 다운로드 한 다음에 유의
@@ -109,7 +109,7 @@ total_keyword_list=[]
 for message in message_6000_list:
     key_word_list = []
     for i in message:
-        gpt_5_client = OpenAI(api_key='sk-proj-ePxLzPaF5osbpf5c9Su8T3BlbkFJWLQJT1tos1kynUvWy3dJ')
+        gpt_5_client = OpenAI(api_key='your_openai_key')
 
         # 텍스트 데이터 다운로드 한 다음에 유의
         completion = gpt_5_client.chat.completions.create(
@@ -144,7 +144,7 @@ keyword_dataframe.to_csv('keyword.csv')
 
 # Embedding = embedding
 # Encoding = encoding
-# client = OpenAI(api_key='sk-proj-ePxLzPaF5osbpf5c9Su8T3BlbkFJWLQJT1tos1kynUvWy3dJ')
+# client = OpenAI(api_key='your_openai_key')
 
 # X, y = [], []
 
