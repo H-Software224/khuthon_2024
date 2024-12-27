@@ -8,3 +8,6 @@
 |OPENAI_API_quickstart|https://platform.openai.com/docs/quickstart|
 |Pytorch|https://pytorch.org/docs/stable/index.html|
 |KKma(Konlpy)|https://konlpy.org/ko/latest/api/konlpy.tag/#module-konlpy.tag._kkma|
+
+## Pipeline
+![image](./image/pipeline.jpg)
